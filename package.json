@@ -1,0 +1,22 @@
+{
+  "name": "zadanie_8_3",
+  "version": "1.0.0",
+  "description": "example jshint",
+  "main": "scripts.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "keywords": [
+    "jshint"
+  ],
+  "author": "Adam Rudny",
+  "license": "ISC"
+}

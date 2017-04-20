@@ -2,11 +2,11 @@ module.exports = function(grunt) {
 	
 	// Project configuration.
 	grunt.initConfig({
-        jshint: {
-            all: ['js/*.js']
-        },
+      jshint: {
+        all: ['js/*.js']
+      },
 
-		sass: {
+		  sass: {
       		options: {
         		sourceMap: true
       		},
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 	});
 
 	// Load the plugin tasks.
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');

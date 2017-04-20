@@ -10,7 +10,10 @@
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-sass": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0"
+  },
   "scripts": {
     "test": "kodilla-test"
   },
@@ -18,5 +21,13 @@
     "jshint"
   ],
   "author": "Adam Rudny",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apocalyptan/zadanie-jshint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Apocalyptan/zadanie-jshint/issues"
+  },
+  "homepage": "https://github.com/Apocalyptan/zadanie-jshint#readme"
 }

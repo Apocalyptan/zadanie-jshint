@@ -29,12 +29,16 @@ module.exports = function(grunt) {
     	},
 
     	watch: {
-    		scripts: {
+    		css: {
     			files: ['sass/*.sass'],
     			tasks: ['sass'],
     			options: {
     				spawn: false,
     			}
+        js: {
+            files: ['<%= jshint.all %>'],
+            tasks: ['jshint']
+          }
     		}
     	}
 

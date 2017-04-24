@@ -1,3 +1,5 @@
 node_modules
 css/main.css
+css/main.css.map
 images/build
+.idea/

@@ -1,48 +1,47 @@
 module.exports = function(grunt) {
 	
 	// Project configuration.
-	grunt.initConfig({
+    grunt.initConfig({
       jshint: {
         all: ['js/*.js']
       },
 
-		  sass: {
-      		options: {
-        		sourceMap: true
-      		},
-     	 	dist: {
-       	 		files: {
-          			'css/main.css': 'sass/main.sass'
-       			}
-      		}
-    	},
+      sass: {
+        options: {
+          sourceMap: true
+        },
+        dist: {
+          files: {
+            'css/main.css': 'sass/main.sass'
+          },
+        }
+      },
 
-    	imagemin: {
-    		dynamic: {
-    			files: [{
-    				expand: true,
-    				cwd: 'images/',
-    				src: ['**/*.{png,jpg,gif}'],
-    				dest: 'images/build/'
-    			}]
-    		}
-    	},
+      imagemin: {
+        dynamic: {
+          files: [{
+            expand: true,
+            cwd: 'images/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'images/build/'
+          }]
+        }
+      },
 
-    	watch: {
-    		css: {
-    			files: ['sass/*.sass'],
-    			tasks: ['sass'],
-    			options: {
-    				spawn: false,
-    			}
+      watch: {
+        css: {
+          files: ['sass/*.sass'],
+          tasks: ['sass'],
+          options: {
+            spawn: false,
+          },
+        },
         js: {
-            files: ['<%= jshint.all %>'],
-            tasks: ['jshint']
-          }
-    		}
-    	}
-
-	});
+          files: ['<%= jshint.all %>'],
+          tasks: ['jshint']
+        }
+      }
+    });
 
 	// Load the plugin tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
